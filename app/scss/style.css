@@ -1,0 +1,341 @@
+@charset "UTF-8";
+/*för jag inte finner annan användning för detta i min kod just nu, kopplat till product.scss*/
+/* line 20, C:/Users/Patric/Desktop/SASS/app/scss/style.scss */
+body {
+  background-image: url(http://previews.123rf.com/images/ihor_seamless/ihor_seamless0902/ihor_seamless090200023/4278662-vector-seamless-background-with-scissors-Stock-Vector-scissors-sewing-comb.jpg); }
+
+/* line 24, C:/Users/Patric/Desktop/SASS/app/scss/style.scss */
+.wrapper {
+  display: flex;
+  background-color: white;
+  flex-direction: column; }
+  @media screen and (min-width: 800px) {
+    /* line 24, C:/Users/Patric/Desktop/SASS/app/scss/style.scss */
+    .wrapper {
+      width: 80%;
+      margin: auto;
+      border-right: 1px solid black;
+      border-left: 1px solid black;
+      max-width: 1050px; } }
+
+@media screen and (min-width: 800px) {
+  /* line 40, C:/Users/Patric/Desktop/SASS/app/scss/style.scss */
+  .desktop_main_nav {
+    display: flex; } }
+
+/* line 2, C:/Users/Patric/Desktop/SASS/app/scss/_fonts.scss */
+a, .product a {
+  font-size: 16px;
+  font-family: sans-serif;
+  line-height: 1.4em;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none; }
+
+/* line 13, C:/Users/Patric/Desktop/SASS/app/scss/_fonts.scss */
+a {
+  color: black; }
+
+/* line 17, C:/Users/Patric/Desktop/SASS/app/scss/_fonts.scss */
+h1 {
+  font-family: serif;
+  font-size: 18px;
+  font-weight: bold; }
+
+/* line 24, C:/Users/Patric/Desktop/SASS/app/scss/_fonts.scss */
+.product a {
+  font-size: 12px; }
+
+/*Start Header Sections*/
+/* line 2, C:/Users/Patric/Desktop/SASS/app/scss/_header.scss */
+header {
+  display: flex;
+  border-bottom: 1px solid #CCCCCC;
+  justify-content: center;
+  align-items: center;
+  background-color: #db7093; }
+  /* line 9, C:/Users/Patric/Desktop/SASS/app/scss/_header.scss */
+  header #logo {
+    height: 50px;
+    width: 80px; }
+    /* line 13, C:/Users/Patric/Desktop/SASS/app/scss/_header.scss */
+    header #logo img {
+      width: 100%;
+      height: 100%; }
+  @media screen and (min-width: 800px) {
+    /* line 2, C:/Users/Patric/Desktop/SASS/app/scss/_header.scss */
+    header {
+      padding-left: 20px; } }
+  /* line 23, C:/Users/Patric/Desktop/SASS/app/scss/_header.scss */
+  header .member {
+    display: none; }
+    @media screen and (min-width: 800px) {
+      /* line 23, C:/Users/Patric/Desktop/SASS/app/scss/_header.scss */
+      header .member {
+        display: flex;
+        align-items: center;
+        padding-right: 20px; }
+        /* line 31, C:/Users/Patric/Desktop/SASS/app/scss/_header.scss */
+        header .member a {
+          padding: 5px; }
+        /* line 35, C:/Users/Patric/Desktop/SASS/app/scss/_header.scss */
+        header .member img {
+          height: 30px;
+          width: 30px; } }
+
+/* line 43, C:/Users/Patric/Desktop/SASS/app/scss/_header.scss */
+#search {
+  display: flex;
+  flex-grow: 1;
+  height: 30px;
+  padding-right: 6px;
+  margin-left: 6px;
+  align-items: center;
+  justify-content: center; }
+
+/* line 53, C:/Users/Patric/Desktop/SASS/app/scss/_header.scss */
+#search_form {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  max-width: 500px; }
+
+/* line 60, C:/Users/Patric/Desktop/SASS/app/scss/_header.scss */
+.searchbutton {
+  background: url("/img/search-icon.svg") no-repeat;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border: none;
+  margin-left: 6px; }
+
+/* line 70, C:/Users/Patric/Desktop/SASS/app/scss/_header.scss */
+.searchbox {
+  width: 100%;
+  height: 30px; }
+
+/*End Header Sections*/
+/* line 1, C:/Users/Patric/Desktop/SASS/app/scss/_nav.scss */
+nav {
+  display: none; }
+  /* line 5, C:/Users/Patric/Desktop/SASS/app/scss/_nav.scss */
+  nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #CCCCCC;
+    flex-flow: column wrap;
+    /* Viktigt */ }
+  /* line 12, C:/Users/Patric/Desktop/SASS/app/scss/_nav.scss */
+  nav li {
+    width: 100%;
+    height: 30px; }
+    /* line 17, C:/Users/Patric/Desktop/SASS/app/scss/_nav.scss */
+    nav li:hover {
+      background-color: #f98eb1; }
+  /* line 21, C:/Users/Patric/Desktop/SASS/app/scss/_nav.scss */
+  nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    text-decoration: none; }
+    @media screen and (min-width: 800px) {
+      /* line 21, C:/Users/Patric/Desktop/SASS/app/scss/_nav.scss */
+      nav a {
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 10px;
+        font-weight: 100;
+        font-size: 12px; } }
+  @media screen and (min-width: 800px) {
+    /* line 1, C:/Users/Patric/Desktop/SASS/app/scss/_nav.scss */
+    nav {
+      display: flex;
+      min-width: 200px;
+      border-right: 1px solid black; }
+      /* line 48, C:/Users/Patric/Desktop/SASS/app/scss/_nav.scss */
+      nav ul {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        padding-top: 10px;
+        flex-flow: column wrap;
+        /* Viktigt */ }
+      /* line 56, C:/Users/Patric/Desktop/SASS/app/scss/_nav.scss */
+      nav li {
+        width: 100%;
+        height: auto; } }
+
+/* line 68, C:/Users/Patric/Desktop/SASS/app/scss/_nav.scss */
+.fa-times,
+.fa-bars {
+  color: #000000;
+  font-size: 2em;
+  padding: 1em; }
+
+/* Döljer checkboxen för menyn*/
+/* line 74, C:/Users/Patric/Desktop/SASS/app/scss/_nav.scss */
+#nav-toggle {
+  display: none; }
+
+/* hide box on desktop */
+@media screen and (min-width: 800px) {
+  /* line 80, C:/Users/Patric/Desktop/SASS/app/scss/_nav.scss */
+  #nav-toggle,
+  header .fa-bars {
+    display: none; } }
+
+/* Döljer Font icon Krysset i default läge */
+/* line 86, C:/Users/Patric/Desktop/SASS/app/scss/_nav.scss */
+#nav-toggle,
+header .fa-times {
+  display: none; }
+
+/* Visar menu för  mobil i när checkboxen är checked läge */
+/* line 90, C:/Users/Patric/Desktop/SASS/app/scss/_nav.scss */
+#nav-toggle:checked + .wrapper nav {
+  display: block; }
+
+/* Döljer font icon Bar när checkboxen är checked läge */
+/* line 94, C:/Users/Patric/Desktop/SASS/app/scss/_nav.scss */
+#nav-toggle:checked + .wrapper header .fa-bars {
+  display: none; }
+
+/* Visar font icon krysset när checkboxen är i checked läge */
+/* line 98, C:/Users/Patric/Desktop/SASS/app/scss/_nav.scss */
+#nav-toggle:checked + .wrapper header .fa-times {
+  display: block; }
+  @media screen and (min-width: 800px) {
+    /* line 98, C:/Users/Patric/Desktop/SASS/app/scss/_nav.scss */
+    #nav-toggle:checked + .wrapper header .fa-times {
+      display: none; } }
+
+/*Product + main (productbox)*/
+/* line 3, C:/Users/Patric/Desktop/SASS/app/scss/_product.scss */
+.main {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  text-align: center; }
+  @media screen and (min-width: 400px) {
+    /* line 3, C:/Users/Patric/Desktop/SASS/app/scss/_product.scss */
+    .main {
+      justify-content: center;
+      align-items: center;
+      flex-flow: wrap; } }
+  @media screen and (min-width: 800px) {
+    /* line 3, C:/Users/Patric/Desktop/SASS/app/scss/_product.scss */
+    .main {
+      flex-flow: wrap; } }
+
+/* line 27, C:/Users/Patric/Desktop/SASS/app/scss/_product.scss */
+.product {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+  border: 1px solid black; }
+  /* line 35, C:/Users/Patric/Desktop/SASS/app/scss/_product.scss */
+  .product:hover {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #db7093; }
+  /* line 38, C:/Users/Patric/Desktop/SASS/app/scss/_product.scss */
+  .product img {
+    width: 90%;
+    padding-top: 5px; }
+  @media screen and (min-width: 400px) {
+    /* line 27, C:/Users/Patric/Desktop/SASS/app/scss/_product.scss */
+    .product {
+      width: 30vh;
+      align-items: center;
+      height: 35vh;
+      text-align: center;
+      justify-content: space-between; }
+      /* line 54, C:/Users/Patric/Desktop/SASS/app/scss/_product.scss */
+      .product img {
+        width: auto;
+        max-height: 25vh;
+        max-width: 24vh; } }
+  @media screen and (min-width: 800px) {
+    /* line 27, C:/Users/Patric/Desktop/SASS/app/scss/_product.scss */
+    .product {
+      flex-direction: column;
+      border: 1px solid black;
+      width: 30vh;
+      height: 30vh;
+      padding: 2px;
+      align-items: center; }
+      /* line 71, C:/Users/Patric/Desktop/SASS/app/scss/_product.scss */
+      .product img {
+        width: auto;
+        max-height: 22vh;
+        max-width: 25vh; } }
+
+/* line 82, C:/Users/Patric/Desktop/SASS/app/scss/_product.scss */
+.product_detail {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  border: solid 1px black; }
+  /* line 88, C:/Users/Patric/Desktop/SASS/app/scss/_product.scss */
+  .product_detail img {
+    max-width: 80%;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  @media screen and (min-width: 400px) {
+    /* line 82, C:/Users/Patric/Desktop/SASS/app/scss/_product.scss */
+    .product_detail {
+      width: 60%; } }
+  @media screen and (min-width: 800px) {
+    /* line 82, C:/Users/Patric/Desktop/SASS/app/scss/_product.scss */
+    .product_detail {
+      width: 90%;
+      height: 50vh;
+      flex-direction: row;
+      align-items: center; }
+      /* line 112, C:/Users/Patric/Desktop/SASS/app/scss/_product.scss */
+      .product_detail figure {
+        width: 40%; }
+      /* line 113, C:/Users/Patric/Desktop/SASS/app/scss/_product.scss */
+      .product_detail section {
+        width: 60%; } }
+
+/*Footer Settings*/
+/* line 3, C:/Users/Patric/Desktop/SASS/app/scss/_footer.scss */
+footer {
+  display: flex;
+  background-color: #db7093;
+  justify-content: center;
+  width: 100%;
+  max-width: 1050px; }
+  @media screen and (min-width: 800px) {
+    /* line 3, C:/Users/Patric/Desktop/SASS/app/scss/_footer.scss */
+    footer {
+      height: 40px; } }
+  /* line 20, C:/Users/Patric/Desktop/SASS/app/scss/_footer.scss */
+  footer ul {
+    display: flex;
+    width: 100%;
+    height: 35px;
+    border-top: 3px solid #CCCCCC; }
+  /* line 29, C:/Users/Patric/Desktop/SASS/app/scss/_footer.scss */
+  footer .f_link {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    font-weight: 400;
+    font-size: 15px; }
+
+/*End Footer Settings*/
+
+/*# sourceMappingURL=style.css.map */

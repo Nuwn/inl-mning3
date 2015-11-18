@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+$desktop-width: 'min-width:800px';
+$tablet-width: 'min-width:400px';
+$prim-color: #db7093;  
+
+/*för jag inte finner annan användning för detta i min kod just nu, kopplat till product.scss*/
+@mixin border-radius ($radius) {  
+  
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius; 
+          border-radius: $radius;
+     
+} 
+ 
+     
+
+  
+body{ 
+     
+    background-image: url(http://previews.123rf.com/images/ihor_seamless/ihor_seamless0902/ihor_seamless090200023/4278662-vector-seamless-background-with-scissors-Stock-Vector-scissors-sewing-comb.jpg);
+}   
+.wrapper {
+    display: flex; 
+    background-color: white ;
+    flex-direction: column; 
+    
+     
+   
+  @media screen and ($desktop-width) {
+        width: 80%;
+        margin:auto;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+        max-width: 1050px;
+     }    
+    }
+
+.desktop_main_nav{
+    @media screen and ($desktop-width){
+    display: flex;
+    
+    }
+    
+}
+
+@import "fonts";
+@import "header";
+@import "nav"; 
+@import "product";
+@import "footer";
+
+
+
+
+
+
+
+
+
+
+    
+    
+  
+  
+   
+    
+ 
+
+        
+    
+    
+ 
+
+

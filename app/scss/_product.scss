@@ -1,0 +1,116 @@
+/*Product + main (productbox)*/
+
+.main {
+    
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding-top:10px;
+    padding-bottom: 30px;
+    text-align: center;
+    
+ 
+            @media screen and ($tablet-width){
+                justify-content: center;
+                align-items: center;
+                flex-flow: wrap;
+                }
+     
+            @media screen and ($desktop-width) {
+                flex-flow: wrap;
+    }
+}
+
+
+
+.product {
+   
+    display: flex;  
+    justify-content: center;
+    flex-direction: column;
+    margin:10px;
+    border: 1px solid black;
+   
+    &:hover{@include border-radius(10px); background-color: #db7093;}
+        
+            
+            img {
+                width: 90%;
+                padding-top: 5px;
+                
+                }
+            
+            
+
+   
+                @media screen and ($tablet-width){
+                        width: 30vh;
+                        align-items: center;
+                        height: 35vh; 
+                        text-align: center;
+                        justify-content: space-between;
+                    
+                        img {
+                        width: auto;
+                        max-height: 25vh;
+                        max-width: 24vh;
+                        }
+    
+                }
+    
+   
+                @media screen and ($desktop-width) {
+                        flex-direction: column;
+                        border: 1px solid black;  
+                        width: 30vh;
+                        height: 30vh;
+                        padding: 2px;
+                        align-items: center;
+                    
+                        img {
+                           width: auto;
+                           max-height: 22vh;
+                           max-width: 25vh;
+                        }}     
+        
+        
+        
+}
+
+
+.product_detail {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    border: solid 1px black;
+    
+    img{
+        max-width:80%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    section{
+       
+        article{   
+        }
+            
+    }
+    .article_footer {
+        
+        
+    }
+    @media screen and ($tablet-width){
+      width: 60%;  
+    }
+    @media screen and ($desktop-width){
+      width: 90%;  
+        height: 50vh;    
+        flex-direction: row;
+        align-items: center;
+        figure{width:40%;}
+        section{width:60%;}
+        
+    }
+}
